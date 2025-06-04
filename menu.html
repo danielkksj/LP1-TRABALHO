@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vitrine de Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="cadastros/produto.html" class="nav-link text-white">Cadastrar Produto</a>
+      <a href="cadastros/cliente.html" class="nav-link text-white">Cadastrar Cliente</a>
+      <a href="cadastros/fornecedor.html" class="nav-link text-white">Cadastrar Fornecedor</a>
+      <a href="cadastros/categoria.html" class="nav-link text-white">Cadastrar Categoria</a>
+      <a href="cadastros/entregador.html" class="nav-link text-white">Cadastrar Entregador</a>
+    </div>
+  </div>
+
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <button class="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">&#9776;</button>
+      <a href="/logout" class="btn btn-danger">Sair</a>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <h1 class="text-center mb-4">Vitrine de Produtos</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagens/estilingue.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <p class="card-text text-center">Estilingue Top de Linha</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagens/arco.jpg" class="card-img-top" alt="Produto 2">
+          <div class="card-body">
+            <p class="card-text text-center">Arco e Flecha Top</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagens/nerf.jpeg" class="card-img-top" alt="Produto 3">
+          <div class="card-body">
+            <p class="card-text text-center">Nerf TOP DE MAIS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
