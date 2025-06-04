@@ -1,55 +1,8 @@
 {
-  "usuarios": [
-    {
-      "id": "b6f6",
-      "nome": "da",
-      "senha": "123",
-      "cpf": "123",
-      "telefone": "123"
-    },
-    {
-      "id": "29fd",
-      "nome": "daniel",
-      "senha": "1234",
-      "cpf": "1234",
-      "telefone": "1234"
-    }
-  ],
-  "clientes": [
-    {
-      "id": "b824",
-      "nome": "da",
-      "cpf": "123",
-      "telefone": "123"
-    }
-  ],
-  "produtos": [
-    {
-      "id": "a18f",
-      "nome": "da",
-      "quantidade": "123"
-    }
-  ],
-  "fornecedores": [
-    {
-      "id": "8119",
-      "nome": "da",
-      "telefone": "1234",
-      "cpf": "12345"
-    }
-  ],
-  "entregadores": [
-    {
-      "id": "857d",
-      "nome": "da",
-      "cpf": "123",
-      "telefone": "123"
-    }
-  ],
-  "categorias": [
-    {
-      "id": "512b",
-      "nome": "dasdas"
-    }
-  ]
+  "usuarios": [],
+  "clientes": [],
+  "produtos": [],
+  "fornecedores": [],
+  "entregadores": [],
+  "categorias": []
 }
