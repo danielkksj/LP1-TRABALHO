@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white text-center">
+            <h4 class="mb-0">Login</h4>
+          </div>
+          <div class="card-body">
+            <form action="/login" method="POST" onsubmit="return validarFormulario()">
+              <div class="mb-3">
+                <label for="usuario" class="form-label">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" class="form-control">
+                <div id="erroUsuario" class="text-danger mt-1 d-none">O campo usuário é obrigatório.</div>
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control">
+                <div id="erroSenha" class="text-danger mt-1 d-none">O campo senha é obrigatório.</div>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success">Entrar</button>
+              </div>
+            </form>
+            <p class="text-center mt-3 mb-0">
+              Não tem conta? <a href="cadastroInicial.html">Cadastre-se aqui</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validarFormulario() {
+      const usuario = document.getElementById("usuario").value.trim();
+      const senha = document.getElementById("senha").value.trim();
+      const erroUsuario = document.getElementById("erroUsuario");
+      const erroSenha = document.getElementById("erroSenha");
+      let valido = true;
+
+      erroUsuario.classList.add("d-none");
+      erroSenha.classList.add("d-none");
+
+      if (usuario === "") {
+        erroUsuario.classList.remove("d-none");
+        valido = false;
+      }
+      if (senha === "") {
+        erroSenha.classList.remove("d-none");
+        valido = false;
+      }
+
+      return valido;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
